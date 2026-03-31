@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bioré: The science of clean pores. Lightweight, dermatologist-tested skincare.">
+    <title>Bioré | The Science of Clean Pores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="social-proof-bar">
+        ✨ #1 Pore Cleansing Brand in Japan | Dermatologist Tested
+    </div>
+
+    <header id="main-header">
+        <div class="logo">Bioré</div>
+        <nav aria-label="Main navigation">
+            <div class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Clear pores.<br>Fresh skin.</h1>
+                <p>Advanced Japanese pore care for your daily glow. Lightweight, effective, and science-backed.</p>
+                <div class="hero-ctas">
+                    <a href="#shop" class="btn btn-primary">Shop Bestsellers</a>
+                    <a href="#quiz" class="btn btn-outline">Skin Quiz</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop">
+            <div class="section-header">
+                <h2>Trending Now</h2>
+            </div>
+            
+            <div class="scroller">
+                <article class="product-card">
+                    <div class="tag">Bestseller</div>
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80');"></div>
+                    <h3 class="product-title">UV Aqua Rich Watery Essence</h3>
+                    <p class="product-desc">SPF 50+ protection that feels like water.</p>
+                    <div class="product-price">$14.99</div>
+                    <button class="btn btn-primary add-to-cart" data-product="Aqua Rich">Add to Cart</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=80');"></div>
+                    <h3 class="product-title">Charcoal Cleanser</h3>
+                    <p class="product-desc">Deep pore detox for a shine-free finish.</p>
+                    <div class="product-price">$9.99</div>
+                    <button class="btn btn-primary add-to-cart" data-product="Charcoal Cleanser">Add to Cart</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80');"></div>
+                    <h3 class="product-title">Deep Pore Strips</h3>
+                    <h3 class="product-title">Witch Hazel Strips</h3>
+                    <p class="product-desc">Instant blackhead removal in 10 minutes.</p>
+                    <div class="product-price">$7.49</div>
+                    <button class="btn btn-primary add-to-cart" data-product="Pore Strips">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="routine-builder-wrapper">
+            <div class="routine-builder" id="quiz">
+                <h2>Find Your Perfect Match</h2>
+                <p>Not sure where to start? Take our quiz for a custom routine.</p>
+                <button class="btn btn-primary">Start Skin Quiz</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <form class="email-capture" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                <input type="email" placeholder="Email for 10% off" required>
+                <button type="submit" class="btn btn-primary">Join</button>
+            </form>
+            <p>&copy; 2026 Bioré Prototype.</p>
+        </div>
+    </footer>
+
+    <div id="toast"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
